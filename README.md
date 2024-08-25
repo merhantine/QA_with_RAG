@@ -9,7 +9,7 @@ I modified some codes as my experiments that are taken from https://github.com/L
 pip install -r requirements.txt
 ```
 
-### 2. Set Api Key
+### 2. Set API Keys
 
 - Create a new ``openai api key``, link: https://platform.openai.com/api-keys.
 
