@@ -1,5 +1,5 @@
 # Simple Question Answering using RAG Approach
-I just modified some codes as my experiments that are taken from https://github.com/Lizhecheng02/RAG-ChatBot. Lizhecheng02 is original author.
+I modified some codes as my experiments that are taken from https://github.com/Lizhecheng02/RAG-ChatBot. Lizhecheng02 is the original author.
 
 ## Python Environment
 
