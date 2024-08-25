@@ -103,7 +103,7 @@ def main():
     initialize_session_state()
     # st.title("Document based Question-Answering using RAG")
     # icon.show_icon(":foggy:")
-    st.markdown("# :rainbow[Document based Question-Answering using RAG]")
+    st.markdown("# :rainbow[Document based Question-Answering using RAG]",use_column_width=True )
     st.sidebar.title("Document Processing")
     uploaded_files = st.sidebar.file_uploader(
         "Upload files (pdf/doc/docx/txt)",
