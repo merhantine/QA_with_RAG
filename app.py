@@ -45,7 +45,7 @@ def display_chat_history(chain):
         with st.form(key="my_form", clear_on_submit=True):
             user_input = st.text_input(
                 "Question:",
-                placeholder="Asking about your documents",
+                placeholder="Asking about your uploaded documents",
                 key="input"
             )
             submit_button = st.form_submit_button(label="Send")
@@ -101,7 +101,7 @@ def create_conversational_chain(vector_store):
 
 def main():
     initialize_session_state()
-    st.title("Chatbot using Simple RAG")
+    st.title("Document based Question-Answering using RAG")
     st.sidebar.title("Document Processing")
     uploaded_files = st.sidebar.file_uploader(
         "Upload files (pdf/doc/docx/txt)",
