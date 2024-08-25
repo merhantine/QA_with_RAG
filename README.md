@@ -1,4 +1,4 @@
-# Simple Question Answering using RAG Approach
+# Simple Question Answering using RAG Approach, Streamlit and Open AI Models
 I modified some codes as my experiments that are taken from https://github.com/Lizhecheng02/RAG-ChatBot. Lizhecheng02 is the original author.
 
 ## Python Environment
