@@ -1,4 +1,5 @@
-# This Repo is for creating RAG system using LangChain and Streamlit
+# Simple Question Answering using RAG Approach
+I just modified some codes as my experiments that are taken from https://github.com/Lizhecheng02/RAG-ChatBot. Lizhecheng02 is original author.
 
 ## Python Environment
 
@@ -150,12 +151,6 @@ The code is almost the same as ``colab.ipynb``, just add the response from ``ori
 - Set your ``GROQ_API_KEY`` in the ``.env`` file.
 
 - Follow all the steps in the **Part 7**, but change the **Main file path** to ``app-groq.py``
-
-### 9. Use Llama Model
-
-- Get your ``LLAMA_API_KEY`` at https://console.llama-api.com/account/api-token.
-
-- Set your ``LLAMA_API_KEY`` in the ``.env`` file.
 
 - Follow all the steps in the **Part 7**, but change the **Main file path** to ``app-llama.py``
 
