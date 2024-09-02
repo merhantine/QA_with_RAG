@@ -138,7 +138,7 @@ def main():
         text_chunks = text_splitter.split_documents(text)
 
         embedding = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L12-v2",
+            model_name="sentence-transformers/all-mpnet-base-v2",
             model_kwargs={"device": "cpu"}
         )
 
