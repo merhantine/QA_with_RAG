@@ -11,13 +11,7 @@ pip install -r requirements.txt
 
 ### 2. Set API Keys
 
-- Create a new ``openai api key``, link: https://platform.openai.com/api-keys.
-
-<img src="Images/create_api_key.png" alt="create_api_key" style="zoom: 100%;" />
-
-- Copy it into .env file
-
-​	Set ``OPENAI_API_KEY="Your API KEY"``
+- Create a new ``openai api key``, link: https://platform.openai.com/api-keys. The key will be pasted in Advanced Settings of Streamlit. For example, OPENAI_API_KEY  = "xxxxx...."
 
 ### 3. Run Simple Version On Colab (only support one pdf file)
 - Import ``colab.ipynb`` into ``Google Colab``.
