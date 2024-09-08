@@ -44,12 +44,6 @@ The code is almost the same as ``colab.ipynb``, just add the response from ``ori
 
 - After it's done, you can use it.
 
-<img src="Images/successfully deploy and use.png" alt="chat" style="zoom: 100%;" />
-
-- Now, you can share your app link with others. When you go back to https://share.streamlit.io/, you can see your application now.
-
-<img src="Images/see your app.png" alt="see your app" style="zoom: 100%;" />
-
 ### 6. Use Groq For Faster Inference
 
 - Get your ``GROQ_API_KEY`` at https://console.groq.com/keys.
@@ -60,7 +54,7 @@ The code is almost the same as ``colab.ipynb``, just add the response from ``ori
 
 - Follow all the steps in the **Part 7**, but change the **Main file path** to ``app-llama.py``
 
-### 7. Warning
+### Warning
 
 Since others will be using your ``OPENAI_API_KEY``, ``GROQ_API_KEY`` and ``LLAMA_API_KEY`` when you share your app with them, all costs will be charged to your account. Be cautious when sharing it, and if needed, promptly delete the application you've deployed.
 
