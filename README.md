@@ -14,37 +14,13 @@ pip install -r requirements.txt
 - Create a new ``openai api key``, link: https://platform.openai.com/api-keys. The key will be pasted later in Advanced Settings of Streamlit on "Deploy an app" page. For example, OPENAI_API_KEY  = "xxxxx...."
 - <img src="Images/deploy process.png" alt="deploy process" style="zoom: 100%;" />
 
-### 3. Run Simple Version On Colab (only support one pdf file)
-- Import ``colab.ipynb`` into ``Google Colab``.
-
-- Drag your pdf file into ``Google Colab`` and change the file name in the code.
-```
-loader = PyPDFLoader("data.pdf")
-```
-
-- Input your ``openai api key`` in the ``ChatOpenAI()``.
-
-```
-llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key="")
-```
-
-- You can change embedding model by searching on ``HuggingFace``.
-```
-embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/xxxxxxx")
-```
-
-- Ask question and get answer on ``Google Colab``.
-
-<img src="Images/simple colab version.png" style="zoom: 100%;" />	
-
-
-### 4. Compare RAG With Original ChatGPT
+### 3. Compare RAG With Original ChatGPT
 ```
 python compare.py
 ```
 The code is almost the same as ``colab.ipynb``, just add the response from ``original ChatGPT``. When you enter the question, you can see responses from both ``RAG system`` and ``original ChatGPT``.
 
-### 5. Deploy Your App
+### 4. Deploy Your App
 - Fork this GitHub repo into your own GitHub account
 
 <img src="Images/fork.png" alt="fork" style="zoom: 100%;" />
