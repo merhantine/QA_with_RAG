@@ -79,7 +79,7 @@ def display_chat_history(chain):
 
 def create_conversational_chain(vector_store):
     llm = ChatOpenAI(
-        model_name="gpt-3.5-turbo",
+        model_name="gpt-4-turbo",
         temperature=0.1,
         openai_api_key=st.secrets['OPENAI_API_KEY']
     )
