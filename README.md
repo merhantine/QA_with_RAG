@@ -43,7 +43,7 @@ The code is almost the same as ``colab.ipynb``, just add the response from ``ori
 <img src="Images/deploy process.png" alt="deploy process" style="zoom: 100%;" />
 
 - After it's done, you can start using it. Uploading one pdf document file and start querying based on information inside the file.
-<img src="Images/chat_1.png" alt="deploy process" style="zoom: 100%;" />
+<img src="Images/Chat_1.png" alt="deploy process" style="zoom: 100%;" />
 
 ### 6. Use Groq For Faster Inference
 
