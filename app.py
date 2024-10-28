@@ -45,7 +45,7 @@ def display_chat_history(chain):
         with st.form(key="my_form", clear_on_submit=True):
             user_input = st.text_input(
                 "Question:",
-                placeholder="Asking about your uploaded documents",
+                placeholder="Inquiry about your any uploaded documents!",
                 key="input"
             )
             submit_button = st.form_submit_button(label="Send")
@@ -80,7 +80,7 @@ def display_chat_history(chain):
 def create_conversational_chain(vector_store):
     llm = ChatOpenAI(
         model_name="gpt-4o-mini",
-        temperature=0.1,
+        temperature=0.5,
         openai_api_key=st.secrets['OPENAI_API_KEY']
     )
 
@@ -103,7 +103,7 @@ def main():
     initialize_session_state()
     # st.title("Document based Question-Answering using RAG")
     st.markdown("# :rainbow[Document based Question-Answering using RAG]")
-    st.sidebar.title("Document Processing")
+    st.sidebar.title("Document Processing...")
     uploaded_files = st.sidebar.file_uploader(
         "Upload files (pdf/doc/docx/txt)",
         accept_multiple_files=True
