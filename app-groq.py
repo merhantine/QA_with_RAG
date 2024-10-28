@@ -80,7 +80,7 @@ def display_chat_history(chain):
 def create_conversational_chain(vector_store):
     llm = ChatGroq(
         temperature=0.5,
-        model_name="mixtral-8x7b-32768",
+        model_name="llama-3.1-8b-instant",
         groq_api_key=st.secrets['GROQ_API_KEY']
     )
 
@@ -101,7 +101,7 @@ def create_conversational_chain(vector_store):
 
 def main():
     initialize_session_state()
-    st.title("RAG ChatBot Using LangChain and Groq")
+    st.title("RAG Question-Answer Using LangChain and Groq")
     st.sidebar.title("Document Processing")
     uploaded_files = st.sidebar.file_uploader(
         "Upload Files",
