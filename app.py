@@ -79,7 +79,7 @@ def display_chat_history(chain):
 
 def create_conversational_chain(vector_store):
     llm = ChatOpenAI(
-        model_name="gpt-4o-mini",
+        model_name="gpt-4o",
         temperature=0.5,
         openai_api_key=st.secrets['OPENAI_API_KEY']
     )
@@ -132,7 +132,7 @@ def main():
         text_splitter = CharacterTextSplitter(
             separator="\n",
             chunk_size=768,
-            chunk_overlap=128,
+            chunk_overlap=64,
             length_function=len
         )
         text_chunks = text_splitter.split_documents(text)
