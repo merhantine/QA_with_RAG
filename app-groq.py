@@ -80,7 +80,7 @@ def display_chat_history(chain):
 def create_conversational_chain(vector_store):
     llm = ChatGroq(
         temperature=0.5,
-        model_name="llama-3.2-3b-preview",
+        model_name="llama-3.2-11b-vision-preview",
         groq_api_key=st.secrets['GROQ_API_KEY']
     )
 
