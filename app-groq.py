@@ -80,7 +80,7 @@ def display_chat_history(chain):
 def create_conversational_chain(vector_store):
     llm = ChatGroq(
         temperature=0.5,
-        model_name="llama-3.1-8b-instant",
+        model_name="llama-3.2-3b-preview",
         groq_api_key=st.secrets['GROQ_API_KEY']
     )
 
@@ -131,7 +131,7 @@ def main():
         text_splitter = CharacterTextSplitter(
             separator="\n",
             chunk_size=768,
-            chunk_overlap=128,
+            chunk_overlap=64,
             length_function=len
         )
         text_chunks = text_splitter.split_documents(text)
